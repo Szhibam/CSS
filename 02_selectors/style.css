@@ -1,0 +1,32 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    font-size: 24px;
+
+}
+#first{
+    color: burlywood;
+}
+
+.purple{
+    color: purple;
+    font-family: monospace;
+}
+
+.highlight{
+    background-color: yellow;
+    font-weight: bolder;
+}
+
+.group1, .group2,.group3{
+    color: blue;
+}
+
+.nested>ul>.nested2{
+    background-color: darkcyan;
+}
+
+article:hover{
+    color: chartreuse !important;
+}

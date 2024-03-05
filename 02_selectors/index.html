@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletors in HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Selectors in HTML</h1>
+    </header>
+
+    <h3>specificityOrder</h3>
+    <p>id>class>element</p>
+    <p>precidence order
+        # > . > element
+    </p>
+
+    <main>
+        <article id="first">
+            <h2>Element selectors</h2>
+            <p>
+                <ul>
+                    It is based on HTML element name
+                </ul>
+            </p>
+        </article>
+        <article id="second" class="purple">
+            <h2>Id selectors</h2>
+            <p>
+                <ul>
+                    <li>id of an element is <b class="highlight">unique within a page</b></li>
+                    <li>use hash <span class="highlight">"#"</span> to select an id </li>
+                    <li>It can not start with a number</li>
+                </ul>
+            </p>
+        </article>
+        <article id="third" class="purple highlight">
+            <h2>class selectors</h2>
+            <p>
+                <ul>
+                    <li>use period(.) to select a class</li>
+                    <li>HTML elements can have more than one elements</li>
+                    <li>it cant start with a number </li>
+                    <li>classes makes our code <span>D.R.Y(dont repeat yourself)</span></li>
+                </ul>
+            </p>
+        </article>
+        <article>
+            <h2>Universal Selectors</h2>
+            <p>We use  star (*) to implement it</p>
+        </article>
+        <article>
+            <h2 class="group1">Grouping selectors</h2>
+            <p class="group2">you can select multiple classes or id(S)</p>
+            <p class="group3">and we use comma(,) as a separator</p>
+        </article>
+        <article class="nested">
+            <h2>Nested Selector</h2>
+            <ul>
+                <li>to do this you the syntax is kind of like
+                    .className>ClassName{
+                        background-color: darkcyan;
+                    }
+                </li>
+                <li class="nested2">
+                    you did select me in the nested Selector
+                </li>
+            </ul>
+        </article>
+    </main>
+</body>
+</html>
